@@ -1,7 +1,7 @@
 import React from "react";
 import { Brain, Cloud, Workflow, Mail, ArrowUpRight, Download } from "lucide-react";
 
-const janProfile = "/src/assets/images/jan_profile.jpg";
+const janProfile = "/src/assets/images/jan_profiles.jpg";
 
 interface BentoHeroProps {
   setShowResumeModal: (show: boolean) => void;

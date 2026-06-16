@@ -7,13 +7,6 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-/*const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-const app = express();
-const PORT = 3000;*/
-
-// Safe directory name resolution for both ESM (tsx dev) and CJS (prod bundle)
 const getDirPath = () => {
   try {
     if (typeof import.meta !== "undefined" && import.meta.url) {
@@ -156,11 +149,11 @@ app.post("/api/chat", async (req, res) => {
   let text = "I am Jan's automated assistant clone! Currently, my advanced cognitive brain is offline, but I can surely answer your query. Jan Codrey is a high-performing AI-Enabled Virtual Assistant with background in Accenture IT Cloud Support, ServiceNow SLA management, AWS/GCP, and custom n8n automation.";
 
   if (lowerMessage.includes("hire") || lowerMessage.includes("contact") || lowerMessage.includes("email") || lowerMessage.includes("phone")) {
-    text = "You can hire or contact Jan directly! His email is \u003Cstrong\u003Ejancodrey.delosreyes@gmail.com\u003C/strong\u003E and his phone number is \u003Cstrong\u003E09703031945\u003C/strong\u003E. You can also message him on LinkedIn: linkedin.com/in/jcodreydelosreyes!";
+    text = "You can hire or contact Jan directly! His email is <strong>jancodrey.delosreyes@gmail.com</strong> and his phone number is <strong>09703031945</strong>. You can also message him on LinkedIn: linkedin.com/in/jcodreydelosreyes!";
   } else if (lowerMessage.includes("accenture") || lowerMessage.includes("experience") || lowerMessage.includes("work")) {
     text = "Jan operates as an App/Cloud Support Engineer at Accenture Philippines (July 2025 - Present), handling L1/L2 tickets inside ServiceNow. Previously, he interned in Cloud Infrastructure where he handled Windows Server, AD configuration, and networking fundamentals.";
   } else if (lowerMessage.includes("cert") || lowerMessage.includes("certification") || lowerMessage.includes("google")) {
-    text = "Jan holds elite credentials including the \u003Cstrong\u003EGoogle Generative AI Leader (GAIL)\u003C/strong\u003E certificate, Google Cloud Digital Leader certification, and Salesforce Trailhead Fundamentals!";
+    text = "Jan holds elite credentials including the <strong>Google Generative AI Leader (GAIL)</strong> certificate, Google Cloud Digital Leader certification, and Salesforce Trailhead Fundamentals!";
   } else if (lowerMessage.includes("n8n") || lowerMessage.includes("automation") || lowerMessage.includes("project") || lowerMessage.includes("zapier")) {
     text = "Jan builds real-world automation workflows including an AI-powered IT Ticket Summarization, automated email drafting prompts, and automatic Knowledge Base generators using GPT/n8n/ServiceNow APIs.";
   } else if (lowerMessage.includes("skill") || lowerMessage.includes("cloud") || lowerMessage.includes("it")) {

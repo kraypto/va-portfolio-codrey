@@ -15,10 +15,15 @@ export default function AIChatBot() {
   const [isLoading, setIsLoading] = useState(false);
   const [errorStatus, setErrorStatus] = useState<string | null>(null);
 
-  const messagesEndRef = useRef<HTMLDivElement>(null);
+  const chatContainerRef = useRef<HTMLDivElement>(null);
 
   const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+    if (chatContainerRef.current) {
+      chatContainerRef.current.scrollTo({
+        top: chatContainerRef.current.scrollHeight,
+        behavior: "smooth"
+      });
+    }
   };
 
   useEffect(() => {
@@ -159,7 +164,7 @@ export default function AIChatBot() {
       </div>
 
       {/* Messages */}
-      <div className="flex-1 p-5 overflow-y-auto space-y-4 max-h-[340px] min-h-[220px]">
+      <div ref={chatContainerRef} className="flex-1 p-5 overflow-y-auto space-y-4 max-h-[340px] min-h-[220px]">
         {messages.map((msg) => (
           <div key={msg.id} className={`flex gap-3 ${msg.sender === "user" ? "justify-end" : "justify-start"}`}>
             {msg.sender === "bot" && (
@@ -205,7 +210,6 @@ export default function AIChatBot() {
             <span>{errorStatus}</span>
           </div>
         )}
-        <div ref={messagesEndRef} />
       </div>
 
       {/* Suggested Prompts Grid */}

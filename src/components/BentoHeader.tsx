@@ -1,15 +1,23 @@
 import React from "react";
-import { Brain, Mail, Download } from "lucide-react";
+import { Brain, Mail, Download, Sun, Moon } from "lucide-react";
 
 interface BentoHeaderProps {
   activeTab: string;
   setActiveTab: (tab: string) => void;
   setShowResumeModal: (show: boolean) => void;
+  theme: "light" | "dark";
+  toggleTheme: () => void;
 }
 
-export default function BentoHeader({ activeTab, setActiveTab, setShowResumeModal }: BentoHeaderProps) {
+export default function BentoHeader({ 
+  activeTab, 
+  setActiveTab, 
+  setShowResumeModal, 
+  theme, 
+  toggleTheme 
+}: BentoHeaderProps) {
   return (
-    <header className="sticky top-0 w-full z-50 bg-[#05070a]/80 backdrop-blur-md border-b border-slate-900/50 px-4 sm:px-8 py-4 flex items-center justify-between">
+    <header className="sticky top-0 w-full z-50 portfolio-header backdrop-blur-md border-b border-slate-900/50 px-4 sm:px-8 py-4 flex items-center justify-between">
       <div className="flex items-center gap-2.5">
         <div className="w-8 h-8 bg-gradient-to-br from-cyan-500 to-purple-600 rounded-lg flex items-center justify-center font-bold text-white italic text-sm">
           JC
@@ -65,6 +73,21 @@ export default function BentoHeader({ activeTab, setActiveTab, setShowResumeModa
 
       {/* Right CTA */}
       <div className="flex items-center gap-3">
+        {/* LIGHT / DARK MODE TOGGLE */}
+        <button
+          onClick={toggleTheme}
+          type="button"
+          className="p-2 bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-slate-700 rounded-xl text-slate-200 hover:text-cyan-400 transition duration-200 cursor-pointer flex items-center justify-center"
+          title={theme === "light" ? "Switch to Dark Mode" : "Switch to Light Mode"}
+          aria-label="Toggle Theme"
+        >
+          {theme === "light" ? (
+            <Moon className="w-4 h-4" />
+          ) : (
+            <Sun className="w-4 h-4 text-amber-400" />
+          )}
+        </button>
+
         <a 
           href="#contact" 
           className="hidden sm:flex items-center gap-1.5 bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-200 text-[11px] px-3.5 py-2 rounded-xl transition duration-200 font-bold uppercase tracking-wider font-mono"

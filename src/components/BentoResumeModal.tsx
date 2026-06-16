@@ -357,33 +357,33 @@ Certification:
 
             {/* SCROLLABLE HIGH FIDELITY PAPER PREVIEW BLOCK */}
             <div className="p-6 overflow-y-auto bg-slate-950 flex-1 flex justify-center items-start scrollbar-thin">
-              <div className="bg-white text-slate-800 p-8 sm:p-12 max-w-[800px] w-full rounded-2xl shadow-xl min-h-[1000px] text-left relative selection:bg-cyan-100 selection:text-slate-900 border border-slate-200">
+              <div className="bg-white text-zinc-800 p-8 sm:p-12 max-w-[800px] w-full rounded-2xl shadow-xl min-h-[1000px] text-left relative selection:bg-cyan-100 selection:text-slate-900 border border-zinc-250">
                 <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 rounded-t-2xl"></div>
 
                 {/* Professional Name Plate Header */}
-                <header className="text-center pb-5 border-b-2 border-slate-100">
-                  <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight font-display mb-2">
+                <header className="text-center pb-5 border-b-2 border-zinc-200">
+                  <h1 className="text-2xl sm:text-3xl font-extrabold text-zinc-900 tracking-tight font-display mb-2">
                     JAN CODREY M. DELOS REYES
                   </h1>
                   
-                  <div className="flex flex-wrap justify-center items-center gap-y-1 gap-x-3 text-[11px] sm:text-xs text-slate-500 font-sans">
+                  <div className="flex flex-wrap justify-center items-center gap-y-1 gap-x-3 text-[11px] sm:text-xs text-zinc-500 font-sans">
                     <span className="flex items-center gap-1">
-                      <MapPin className="w-3.5 h-3.5 text-slate-400 shrink-0" />
+                      <MapPin className="w-3.5 h-3.5 text-zinc-400 shrink-0" />
                       3019 Philippines
                     </span>
-                    <span className="text-slate-305">•</span>
+                    <span className="text-zinc-300">•</span>
                     <span className="flex items-center gap-1">
-                      <Phone className="w-3.5 h-3.5 text-slate-400 shrink-0" />
+                      <Phone className="w-3.5 h-3.5 text-zinc-400 shrink-0" />
                       09703031945
                     </span>
-                    <span className="text-slate-305">•</span>
+                    <span className="text-zinc-300">•</span>
                     <span className="flex items-center gap-1">
-                      <Mail className="w-3.5 h-3.5 text-slate-400 shrink-0" />
+                      <Mail className="w-3.5 h-3.5 text-zinc-400 shrink-0" />
                       jancodrey.delosreyes@gmail.com
                     </span>
-                    <span className="text-slate-305">•</span>
+                    <span className="text-zinc-300">•</span>
                     <span className="flex items-center gap-1">
-                      <Linkedin className="w-3.5 h-3.5 text-slate-400 shrink-0" />
+                      <Linkedin className="w-3.5 h-3.5 text-zinc-400 shrink-0" />
                       linkedin.com/in/jcodreydelosreyes
                     </span>
                   </div>
@@ -394,51 +394,51 @@ Certification:
                   
                   {/* Summary */}
                   <section>
-                    <h2 className="text-xs font-bold text-slate-900 uppercase tracking-widest border-b border-slate-200 pb-1 mb-2.5">
+                    <h2 className="text-xs font-bold text-zinc-900 uppercase tracking-widest border-b border-zinc-200 pb-1 mb-2.5">
                       Professional Summary
                     </h2>
-                    <p className="text-xs sm:text-[12.5px] leading-relaxed text-slate-650 font-sans text-justify">
+                    <p className="text-xs sm:text-[12.5px] leading-relaxed text-zinc-600 font-sans text-justify">
                       Associate Infrastructure Engineer with experience supporting cloud and enterprise IT environments through infrastructure administration, incident management, troubleshooting, and system support. Hands-on exposure to Windows Server, Linux environments, cloud platforms, ServiceNow, and IT service management practices. Skilled in problem-solving, technical documentation, system monitoring, and supporting business-critical IT operations.
                     </p>
                   </section>
 
                   {/* Education */}
                   <section>
-                    <h2 className="text-xs font-bold text-slate-900 uppercase tracking-widest border-b border-slate-200 pb-1 mb-2.5">
+                    <h2 className="text-xs font-bold text-zinc-900 uppercase tracking-widest border-b border-zinc-200 pb-1 mb-2.5">
                       Education
                     </h2>
                     <div className="space-y-2 font-sans text-xs sm:text-[12.5px]">
-                      <div className="flex justify-between font-bold text-slate-800">
+                      <div className="flex justify-between font-bold text-zinc-800">
                         <span>Bulacan State University</span>
-                        <span className="font-normal text-slate-500">Malolos, Guinhawa Bulacan</span>
+                        <span className="font-normal text-zinc-500">Malolos, Guinhawa Bulacan</span>
                       </div>
-                      <div className="flex justify-between text-slate-600 italic">
+                      <div className="flex justify-between text-zinc-600 italic">
                         <span>Bachelor of Science in Information Technology</span>
-                        <span className="not-italic text-slate-500">August 2021 – July 2025</span>
+                        <span className="not-italic text-zinc-500">August 2021 – July 2025</span>
                       </div>
-                      <ul className="list-disc pl-4 text-slate-500">
-                        <li><strong>Magna Cum Laude</strong>, Dean’s Lister</li>
+                      <ul className="list-disc pl-4 text-zinc-500">
+                        <li><strong className="text-zinc-800">Magna Cum Laude</strong>, Dean’s Lister</li>
                       </ul>
                     </div>
                   </section>
 
                   {/* Experience */}
                   <section>
-                    <h2 className="text-xs font-bold text-slate-900 uppercase tracking-widest border-b border-slate-200 pb-1 mb-2.5">
+                    <h2 className="text-xs font-bold text-zinc-900 uppercase tracking-widest border-b border-zinc-200 pb-1 mb-2.5">
                       Experience
                     </h2>
                     <div className="space-y-5 font-sans text-xs sm:text-[12.5px]">
                       
                       {/* Accenture Support */}
                       <div className="space-y-1.5">
-                        <div className="flex justify-between font-bold text-slate-800">
+                        <div className="flex justify-between font-bold text-zinc-800">
                           <span>Accenture Philippines</span>
-                          <span className="font-normal text-slate-500">July 2025 – Present</span>
+                          <span className="font-normal text-zinc-500">July 2025 – Present</span>
                         </div>
                         <div className="text-cyan-600 font-semibold text-[11.5px] uppercase tracking-wider">
                           App/Cloud Support Engineer (Service Management)
                         </div>
-                        <ul className="list-disc pl-4 space-y-1 text-slate-600 leading-relaxed">
+                        <ul className="list-disc pl-4 space-y-1 text-zinc-650 leading-relaxed">
                           <li>Provided Level 1 and Level 2 support for cloud and infrastructure-related incidents, helping maintain service availability and operational stability.</li>
                           <li>Managed incident lifecycles through ServiceNow, ensuring timely resolution, accurate documentation, and compliance with established SLAs.</li>
                           <li>Investigated and troubleshot application, connectivity, and system issues, minimizing service disruptions and improving user experience.</li>
@@ -452,14 +452,14 @@ Certification:
 
                       {/* Accenture Academy */}
                       <div className="space-y-1.5">
-                        <div className="flex justify-between font-bold text-slate-800">
+                        <div className="flex justify-between font-bold text-zinc-800">
                           <span>Accenture Philippines</span>
-                          <span className="font-normal text-slate-500">March 2025 – May 2025</span>
+                          <span className="font-normal text-zinc-500">March 2025 – May 2025</span>
                         </div>
-                        <div className="text-slate-600 font-semibold text-[11.5px] uppercase tracking-wider">
+                        <div className="text-zinc-600 font-semibold text-[11.5px] uppercase tracking-wider">
                           Cloud Infrastructure Intern (Cloud Infrastructure Academy)
                         </div>
-                        <ul className="list-disc pl-4 space-y-1 text-slate-600 leading-relaxed">
+                        <ul className="list-disc pl-4 space-y-1 text-zinc-650 leading-relaxed">
                           <li>Completed intensive training focused on cloud infrastructure, enterprise IT operations, and systems administration.</li>
                           <li>Configured and supported Windows Server and Linux environments in lab-based enterprise simulations.</li>
                           <li>Performed system monitoring, user administration, troubleshooting, and infrastructure support activities.</li>
@@ -472,14 +472,14 @@ Certification:
 
                       {/* Salesforce */}
                       <div className="space-y-1.5">
-                        <div className="flex justify-between font-bold text-slate-800">
+                        <div className="flex justify-between font-bold text-zinc-800">
                           <span>Salesforce</span>
-                          <span className="font-normal text-slate-500">Salesforce Trailhead</span>
+                          <span className="font-normal text-zinc-500">Salesforce Trailhead</span>
                         </div>
-                        <div className="text-slate-600 font-semibold text-[11.5px] uppercase tracking-wider">
+                        <div className="text-zinc-600 font-semibold text-[11.5px] uppercase tracking-wider">
                           Salesforce Trailblazer
                         </div>
-                        <ul className="list-disc pl-4 space-y-1 text-slate-600 leading-relaxed">
+                        <ul className="list-disc pl-4 space-y-1 text-zinc-650 leading-relaxed">
                           <li>Completed Salesforce Trailhead learning modules focused on CRM fundamentals, cloud platforms, and business application workflows.</li>
                         </ul>
                       </div>
@@ -489,7 +489,7 @@ Certification:
 
                   {/* Skills Section */}
                   <section>
-                    <h2 className="text-xs font-bold text-slate-900 uppercase tracking-widest border-b border-slate-200 pb-1 mb-2.5">
+                    <h2 className="text-xs font-bold text-zinc-900 uppercase tracking-widest border-b border-zinc-200 pb-1 mb-2.5">
                       Skills & Certification
                     </h2>
                     
@@ -497,8 +497,8 @@ Certification:
                       
                       {/* Left: Skills */}
                       <div>
-                        <h4 className="font-bold text-slate-850 mb-1.5">Technical Skills</h4>
-                        <ul className="list-disc pl-4 space-y-1 text-slate-600">
+                        <h4 className="font-bold text-zinc-800 mb-1.5">Technical Skills</h4>
+                        <ul className="list-disc pl-4 space-y-1 text-zinc-600">
                           <li>Infrastructure Support & IT Operations</li>
                           <li>Active Directory Access Control</li>
                           <li>ServiceNow Incident Queue Audits</li>
@@ -514,19 +514,19 @@ Certification:
 
                       {/* Right: Certifications */}
                       <div>
-                        <h4 className="font-bold text-slate-850 mb-1.5 font-sans">Certifications</h4>
-                        <ul className="list-disc pl-4 space-y-2 text-slate-600">
+                        <h4 className="font-bold text-zinc-800 mb-1.5 font-sans">Certifications</h4>
+                        <ul className="list-disc pl-4 space-y-2 text-zinc-600">
                           <li>
-                            <strong className="text-slate-800">Reinvention with Agentic AI</strong> <span className="text-[10.5px] text-slate-500">— Accenture</span>
-                            <p className="text-[10.5px] text-slate-500 mt-0.5">Professional credential validating generative AI agent loops, dynamic tool bindings, reasoning workflows, and enterprise optimization.</p>
+                            <strong className="text-zinc-800 font-bold">Reinvention with Agentic AI</strong> <span className="text-[10.5px] text-zinc-500">— Accenture</span>
+                            <p className="text-[10.5px] text-zinc-500 mt-0.5">Professional credential validating generative AI agent loops, dynamic tool bindings, reasoning workflows, and enterprise optimization.</p>
                           </li>
                           <li>
-                            <strong className="text-slate-800">Google Generative AI Leader</strong>
-                            <p className="text-[10.5px] text-slate-500 mt-0.5">Foundational credential for smart workflow prompt orchestration & models governance.</p>
+                            <strong className="text-zinc-800 font-bold">Google Generative AI Leader</strong>
+                            <p className="text-[10.5px] text-zinc-500 mt-0.5">Foundational credential for smart workflow prompt orchestration & models governance.</p>
                           </li>
                           <li>
-                            <strong className="text-slate-800">Google Cloud Digital Leader</strong>
-                            <p className="text-[10.5px] text-slate-500 mt-0.5">Core assessment covering identity governance, subnetworks, cloud storage, container deployment, and architectures.</p>
+                            <strong className="text-zinc-800 font-bold">Google Cloud Digital Leader</strong>
+                            <p className="text-[10.5px] text-zinc-500 mt-0.5">Core assessment covering identity governance, subnetworks, cloud storage, container deployment, and architectures.</p>
                           </li>
                         </ul>
                       </div>
@@ -536,7 +536,7 @@ Certification:
 
                 </div>
 
-                <div className="mt-10 pt-5 border-t border-slate-100 text-center text-[10px] text-slate-400 font-mono">
+                <div className="mt-10 pt-5 border-t border-zinc-200 text-center text-[10px] text-zinc-400 font-mono">
                   Jan Codrey M. Delos Reyes • Verified Portfolios Document Core
                 </div>
               </div>

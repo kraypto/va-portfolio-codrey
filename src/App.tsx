@@ -19,6 +19,26 @@ export default function App() {
   // Navigation active tab tracking for header highlight
   const [activeTab, setActiveTab] = useState<string>("home");
 
+  // Theme state: default to 'light' as requested.
+  const [theme, setTheme] = useState<"light" | "dark">(() => {
+    const saved = localStorage.getItem("portfolio_theme");
+    return (saved === "light" || saved === "dark") ? saved : "light";
+  });
+
+  useEffect(() => {
+    localStorage.setItem("portfolio_theme", theme);
+    const root = document.documentElement;
+    if (theme === "dark") {
+      root.classList.add("dark");
+    } else {
+      root.classList.remove("dark");
+    }
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme((prev) => (prev === "light" ? "dark" : "light"));
+  };
+
   // Resume gate modal or status
   const [isDownloading, setIsDownloading] = useState<boolean>(false);
   const [downloadStep, setDownloadStep] = useState<string>("");
@@ -172,16 +192,18 @@ Sent automatically via your Jan Codrey Portfolio Browser Client.`
   };
 
   return (
-    <div className="bg-[#05070a] text-slate-200 min-h-screen relative font-sans">
+    <div className="bg-slate-950 text-slate-200 min-h-screen relative font-sans">
       
       {/* Background stars / grid mesh overlay */}
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(5,7,10,0.85),_rgba(5,7,10,0.85)),_url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2240%22 height=%2240%22 viewBox=%220 0 40 40%22><rect width=%2240%22 height=%2240%22 fill=%22none%22 stroke=%22rgba(30,41,59,0.12)%22 stroke-width=%221%22/></svg>')] bg-repeat [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] pointer-events-none z-0"></div>
+      <div className="absolute inset-0 bg-grid-pattern pointer-events-none z-0"></div>
 
       {/* RENDER MODULAR BENTO HEADER */}
       <BentoHeader 
         activeTab={activeTab} 
         setActiveTab={setActiveTab} 
         setShowResumeModal={setShowResumeModal} 
+        theme={theme}
+        toggleTheme={toggleTheme}
       />
 
       {/* MAIN BENTO DASHBOARD CONTAINER */}
